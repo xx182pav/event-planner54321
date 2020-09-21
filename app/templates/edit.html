@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="formwrapper">                                               
+        <h2 class="title">Edit event</h2>         
+        <form method="POST" action="/">                  
+        {{ form.hidden_tag() }}                         
+        </div>                                        
+        <div class="form-field">                        
+            {{ form.theme.label }}                          
+            {{ form.theme }}                                
+        </div>                                          
+        <div class="form-field">                        
+            {{ form.description.label }}                     
+            {{ form.description }}                            
+        </div>                                         
+        <div class="form-field">                         
+            {{ form.start_time.label }}                      
+            {{ form.start_time }}                            
+        </div>                                           
+        <div class="form-field">                         
+            {{ form.end_time.label }}                        
+            {{ form.end_time }}                               
+        </div>                                           
+        <input type="submit" value="Go">                
+        </form>                                           
+     </div>
+
+     {% endblock %}

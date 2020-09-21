@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>List of all events</h2>
+<table id="tab">
+<tr class="tabhead"><td><h4>Author</h4></td><td><h4>Theme</h4></td><td><h4>Description</h4></td><td><h4>Start time</h4></td><td><h4>End time</h4></td></tr>
+{% for evenses in even %}
+<tr><td><p>{{ evenses.author }}</p></td><td><p>{{ evenses.theme }}</p></td><td><p>{{ evenses.description }}</p></td><td><p>{{ evenses.start_time }}</p></td><td><p>{{ evenses.end_time }}</p></td></tr>
+ 
+{% endfor %}
+</table>
+
+{% endblock %}
+
+
+
