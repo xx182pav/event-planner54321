@@ -6,7 +6,7 @@ services:
         ports:
             - "5000:5000"
         environment:
-            - DATABASE_URL=postgresql://postgres:password@postgres:5432/weather_forecast_dev
+            - DATABASE_URL=postgresql://postgres:docker@postgres:5432/weather_forecast_dev
         depends_on:
             - postgres
     postgres:
