@@ -11,7 +11,7 @@ class Config:
     FLASK_APP="app.py"
     FLASK_DEBUG=1
     FLASK_ENV= 'development'
-    SECRET_KEY=os.getenv('SECRET_KEY')
+    SECRET_KEY='very_good_secret_key'
 
 
     
